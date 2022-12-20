@@ -1,0 +1,111 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 26, 2022, 5:36:49 PM
+    Author     : This Pc
+*/
+
+:root {
+    --main-bg-color: #fff;
+    --second-bg-color: #f5f5f5;
+    --third-bg-color: #e3e3e3;
+    --grey: #4b4b4b;
+    --black: #000;
+    --red: #c0392b;
+    --top-header-size: 30px;
+    --mid-header-size: 80px;
+    --bottom-header-size: 45px;
+    --btn-bg: #000;
+    --btn-border-color: #000;
+    --btn-color: #fff;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+.hiden-table{
+   display: none; 
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+table a{
+    text-decoration: underline;
+}
+ul{
+    list-style-type: none;
+}
+
+th{
+    color: black;
+   background-color: gainsboro;  
+}
+table {
+margin: 20px 20px 20px 0;
+/*width: 70%;*/
+}
+
+th, td {
+    border: 1px solid black;
+  height: 30px;
+  padding: 9px;
+}
+
+/*td:last-child{
+    width: 10px;
+}*/
+
+ul.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.disable-li {
+    pointer-events: none;
+}
+
+ul.pagination > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+ul.pagination > li > a.active {
+    background-color: var(--black);
+    color: var(--main-bg-color);
+}
+
+ul.pagination > li > a:hover {
+    border: 2px solid var(--black);
+}
+table.add td{
+    border: none;
+ }
+table.add input:not([type=radio]){
+    width: 100%
+}
+
+.currency:after{
+    content: ' đ';
+}
+.sidebar{
+    /*text-align: center;*/
+}
+.sidebar ul li{
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+li.active a{
+    color: #DC5F00;
+}
