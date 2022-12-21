@@ -8,13 +8,14 @@ import java.sql.SQLException;
 
 public class DBContext {
     protected Connection connection;
+    private final String dbName = "Fakehasa";
+    private final String username = "sa";
+    private final String password = "12345678";
     public DBContext()
     {
         try {
             // Edit URL , username, password to authenticate with your MS SQL Server
-            String url = "jdbc:sqlserver://localhost:1433;databaseName= BookShop_PRJ301";
-            String username = "sa";
-            String password = "12345678";
+            String url = "jdbc:sqlserver://localhost:1433;databaseName= "+dbName; 
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException | SQLException ex) {
